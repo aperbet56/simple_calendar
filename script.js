@@ -1,4 +1,4 @@
-// Récupérartion des éléments
+// Récupération des éléments
 const select = document.querySelector("select");
 const list = document.querySelector("ul");
 const h1 = document.querySelector("h1");
@@ -7,7 +7,7 @@ const h1 = document.querySelector("h1");
 select.addEventListener("change", () => {
   // Création de la constante choice
   const choice = select.value;
-  // Création de la variable days régler à 31 de base
+  // Création de la variable days réglée à 31 de base
   let days = 31;
 
   if (choice === "Février") {
@@ -31,6 +31,7 @@ select.addEventListener("change", () => {
 const createCalendar = (days, choice) => {
   list.textContent = "";
   h1.textContent = choice;
+  // Utilisation de la boucle for qui va parcourir les jours
   for (let i = 1; i <= days; i++) {
     // Création d'un élément liste et insertion dans le DOM
     const listItem = document.createElement("li");
