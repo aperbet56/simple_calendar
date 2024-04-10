@@ -1,0 +1,72 @@
+/**** Reset ****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none
+}
+
+/**** Style général de la page ****/
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+label {
+    font-size: 25px;
+}
+
+select {
+    background-color: #e5e5e5;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+select:hover {
+    background-color: #cecccc;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    display: block;
+    float: left;
+    width: 25%;
+    border: 2px solid #ffffff;
+    padding: 5px;
+    height: 80px;
+    background-color: #5136b1;
+    color: #ffffff;
+    font-weight: 700;
+    transition: background-color 0.3 ease;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #6755aa;
+}
